@@ -1,4 +1,6 @@
 #include "stdio.h"
+
+#define ROW 3 #define COL 3
 */
 int board[25]= {
     :,:,:,:,:,
@@ -40,17 +42,20 @@ for(index = 0; index < 25; ++index) {
  printf("%4d", board[index]); 
  }
  
+ {int *ptr1, *ptr2;
+ ptr = NOUGHTS; ptr2 = CROSSES;
+ 
 }
-
-int main() {
-
-
-int board[25];
-InitialiseBoard(&board[0]);
+int main(); {int board[25];
+InitiliseBoard(&board[0]);
+board[ConvertTo25[0]] = CROSSES;
+board[ConvertTo25[3]] = NOUGHTS;
+board[ConvertTo25[5]] = CROSSES;
 PrintBoard(&board[0]);
 
 return 0;
 
+}
     
         
     
