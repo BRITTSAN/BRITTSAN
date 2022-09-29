@@ -1,13 +1,20 @@
-#include <stdio.h> #include <stdlib.h> #include <stdbool.h> #include <math.h> #include <string.h>
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <stdbool.h> 
+#include <math.h> 
+#include <string.h>
 
-/* int board[25] = { :,:,:,:,:, :,O,-,X,:, :,X,-,-,:, :,-,-,-,:, :,:,:,:,:, } */ // Create the constants for the board pieces const NOUGHTS = 1; const CROSSES = 2; const BORDER = 8; const EMPTY = 0;
+/* int board[25] = { :,:,:,:,:, :,O,-,X,:, :,X,-,-,:, :,-,-,-,:, :,:,:,:,:, } 
+*/ // Create the constants for the board pieces 
+const NOUGHTS = 1; 
+const CROSSES = 2; 
+const BORDER = 8; 
+const EMPTY = 0;
 
 int* ptr1, * ptr2; ptr1 = NOUGHTS; ptr2 = CROSSES;
 
-const int ConvertTo25[9] = { 6,7,8, 11,12,13,
-
-16,17,18
-}; //Base board design // Creating the board struct struct TTT_BoardGame { unsigned short playerTurn; int boardSqrt; double boardLen; bool canFinish; char board[3][3][3]; };
+const int ConvertTo25[9] = { 6,7,8, 11,12,13,16,17,18}; 
+//Base board design // Creating the board struct struct TTT_BoardGame { unsigned short playerTurn; int boardSqrt; double boardLen; bool canFinish; char board[3][3][3]; };
 
 // Initializing the board struct struct TTT_BoardGame ttt_init(void) { struct TTT_BoardGame game = { 0 }; game.playerTurn = 0; game.boardSqrt = 3; game.boardLen = game.boardSqrt * game.boardSqrt; game.canFinish = false;
 
