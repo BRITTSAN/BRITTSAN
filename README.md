@@ -41,7 +41,7 @@ for (unsigned short v = 0; v < game.boardSqrt; v++) {
 	}
 }
 return game;
-} //Initial welcome information and the board print design void PrintBoard(const int* board) { int index = 0; printf("\nWelcome to my Tic-Tac-Toe Game\nBy: Mark Plucinski\n\n\nBoard:\n"); for (index = 0; index < 25; ++index) { if (index != 0 && index % 5 == 0) printf("\n"); } printf("%4d", board[index]); }
+} //Initial welcome information and the board print design void PrintBoard(const int* board) { int index = 0; printf("\nWelcome to my Tic-Tac-Toe Game\nBy: Brittany Santos\n\n\nBoard:\n"); for (index = 0; index < 25; ++index) { if (index != 0 && index % 5 == 0) printf("\n"); } printf("%4d", board[index]); }
 
 { // constants const char s[3] = { '*', 'X', 'O' }; }
 
